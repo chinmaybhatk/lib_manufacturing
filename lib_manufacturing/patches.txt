@@ -1,0 +1,3 @@
+# List of patches to be applied in the order they should be applied
+# Each line represents a patch module in the format:
+# lib_manufacturing.patches.v1_0.make_custom_fields
