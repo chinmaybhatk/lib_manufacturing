@@ -1,0 +1,12 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "lib_manufacturing"
+version = "0.1.0"
+description = "Lithium-Ion Battery Manufacturing Management System"
+requires-python = ">=3.10"
+
+[tool.flit.module]
+name = "lib_manufacturing"
