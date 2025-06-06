@@ -1,0 +1,40 @@
+{
+    "actions": [],
+    "allow_copy": 1,
+    "allow_events_in_timeline": 0,
+    "allow_guest_to_view": 0,
+    "allow_import": 1,
+    "allow_rename": 1,
+    "autoname": "naming_series:",
+    "beta": 0,
+    "creation": "2025-06-06 00:00:00",
+    "custom": 0,
+    "doctype": "DocType",
+    "document_type": "",
+    "engine": "InnoDB",
+    "fields": [
+        {"fieldname": "naming_series", "fieldtype": "Select", "label": "Naming Series", "options": "LRM-.YYYY.-"},
+        {"fieldname": "material_name", "fieldtype": "Data", "label": "Material Name", "reqd": 1},
+        {"fieldname": "material_type", "fieldtype": "Select", "label": "Material Type", "options": "Cathode Material\nAnode Material\nSeparator\nElectrolyte\nCurrent Collector\nOther", "reqd": 1},
+        {"fieldname": "chemical_composition", "fieldtype": "Data", "label": "Chemical Composition"},
+        {"fieldname": "purity_percentage", "fieldtype": "Percent", "label": "Purity Percentage"},
+        {"fieldname": "supplier", "fieldtype": "Link", "label": "Supplier", "options": "Supplier"},
+        {"fieldname": "batch_number", "fieldtype": "Data", "label": "Batch Number"},
+        {"fieldname": "manufacturing_date", "fieldtype": "Date", "label": "Manufacturing Date"}
+    ],
+    "links": [],
+    "modified": "2025-06-06 00:00:00",
+    "modified_by": "Administrator",
+    "module": "LIB Manufacturing",
+    "name": "LIB Raw Material",
+    "naming_rule": "By Naming Series",
+    "owner": "Administrator",
+    "permissions": [
+        {"create": 1, "delete": 1, "email": 1, "export": 1, "print": 1, "read": 1, "report": 1, "role": "System Manager", "share": 1, "write": 1},
+        {"create": 1, "delete": 0, "email": 1, "export": 1, "print": 1, "read": 1, "report": 1, "role": "Manufacturing User", "share": 0, "write": 1}
+    ],
+    "show_name_in_global_search": 0,
+    "sort_field": "modified",
+    "sort_order": "DESC",
+    "states": []
+}
